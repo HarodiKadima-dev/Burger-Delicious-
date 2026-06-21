@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="header.css"/>
+    <link rel="stylesheet" href="responsividade.css"/>
+    <title>Hamburgaria Só sabores | Burger Delicious</title>
+  </head>
+  <body>
+    <!-- cabeçalho- a navbar-->
+    <header>
+      <nav class="navbar">
+        <img src="logo.png" alt="logo da hamburgaria só sabores" class="logo" loading="lazy">
+        <button id="btn-nav"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        
+        <ul id="nav-links">
+          <li>
+            <a href="#home">Inicio</a>
+          </li>
+          <li>
+            <a href="#destaque">Em destaque</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre nós</a>
+          </li>
+          <li>
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li>
+            <a href="#menu-bebidas">Bebidas</a>
+          </li>
+          
+          <button id="btnWhatsapp"><i class="fa-brands fa-whatsapp"></i> Conversar no whatsapp</button>
+        </ul>
+      </nav>
+    </header>
+    
+    <!--corpo do conteúdo-->
+    <main id="corpo">
+      <!-- conteudo do home-->
+      <section id="home">
+        <img src="home.png" alt="Burger Delicius" class="home-img" loading="lazy">
+        <h1 class="titulo">Não é só  hambúrguer. <span>É burger Delicious.</span></h1>
+        
+        <p class="descricao">Peça agora e receba em minutos em qualquer parte de Luanda.</p>
+        
+        <!--div para estilizar os botões-->
+        <div class="acao-btn">
+          <button id="btnContactar"><i class="fa-brands fa-whatsapp"></i> Contactar</button>
+          <button id="btnConhecer" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})"><i class="fa-solid fa-arrow-down"></i> Ver Cardápio</button>
+        </div>
+      </section>
+      
+      <!-- card 1-->
+      <section id="destaque">
+        <h2 class="destaque-titulo">
+          Em alta
+        </h2>
+        <div class="destaque-cards">
+          <div class="destaque-card">
+            <img src="menu1.png" alt="Volcano cheese" loading="lazy">
+            <div class="destaque-rate">
+              <p>
+                5 <i class="fa-solid fa-star"></i>
+              </p>
+            </div>
+            <p class="destaque-card-descricao">
+              Volcano Cheese <span>5.300 kz</span>
+            </p>
+          </div>
+          
+          <!--card 2-->
+          <div class="destaque-card">
+            <img src="menu2.png" alt="Deliciuos classico" loading="lazy">
+            <div class="destaque-rate">
+              <p>
+                5 <i class="fa-solid fa-star"></i>
+              </p>
+            </div>
+            <p class="destaque-card-descricao">
+              Delicious clássico <span>3.800 kz</span>
+            </p>
+          </div>
+          
+          <!--card 3-->
+          <div class="destaque-card">
+            <img src="menu3.png" alt="Guaca Bacon" loading="lazy">
+            <div class="destaque-rate">
+              <p>
+                5 <i class="fa-solid fa-star"></i>
+              </p>
+            </div>
+            <p class="destaque-card-descricao">
+              Guaca Bacon <span>4.500 kz</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- parte do sobre-->
+      <section id="sobre">
+        <h2 class="destaque-titulo">
+          Sobre Nós
+        </h2>
+        
+        <div class="sobre-content">
+          <img src="logo.png" alt="hamburguer suculento" class="about-img" loading="lazy">
+          <!--história-->
+          <div class="sobre-info">
+            <h3>Nossa <span>História</span></h3>
+            
+            <p>
+              A <span>Burger Delicious</span> nasceu da vontade de elevar o hambúrguer angolano. 
+              Pegamos a tradição do "mão de vaca" bem servido e misturamos com técnica
+              e ingredientes selecionados.<br> <br>
+              Cada burger que sai da nossa grelha carrega o calor de Luanda, a dedicação de quem faz com amor, 
+              e o compromisso de entregar sabor de verdade na tua mesa. Do Talatona ao Benfica, é pra matar a fome com estilo.
+            </p>
+          </div>
+          
+          <!--proposito-->
+          <div class="sobre-info">
+            <h3>Nosso <span>Propósito</span></h3>
+            
+            <p>
+              O nosso propósito é matar a tua fome com respeito e sabor. 
+              Acreditamos que hambúrguer bom não pode ser só bonito na foto - tem que encher a barriga, 
+              marcar o paladar e valer cada kwanza. 
+
+              Por isso escolhemos carne de qualidade, pão que não desmancha e molhos feitos aqui mesmo.<br> <br>
+              Na <span>Burger Delicious</span> a missão é simples: transformar cada refeição num momento de satisfação, 
+              seja no almoço do serviço, no jantar com a família, ou naquela vontade de madrugada. 
+              Fazer parte da tua rotina é o que nos move.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="menu">
+        <!-- cardápio-->
+        <h2 class="destaque-titulo">
+          Cardápio
+        </h2>
+        <div class="menu-cards">
+          <!--imagem da comida-->
+          
+          <div class="menu-card">
+            <img src="menu6.png" alt="Batata frita crocante em caixa de isopor com molhos cheddar e barbecue" loading="lazy">
+            <div class="menu-content">
+              <h3>Batata Isopor</h3>
+              <p class="destaque-card-descricao">
+                <span>2.500 kz</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu7.png" alt="Batata frita artesanal em cestinha com ketchup e maionese caseira" loading="lazy">
+            <div class="menu-content">
+              <h3>Batata Cestinha</h3>
+              <p class="destaque-card-descricao">
+                <span>3.000 kz</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu8.png" alt="Batata frita palito dourada servida em tigela branca rústica" loading="lazy">
+            <div class="menu-content">
+              <h3>Batata Palito Rústica</h3>
+              <p class="destaque-card-descricao">
+                <span>3.700 kz</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu9.png" alt="Triple Cheeseburger com 3 carnes e cheddar derretido escorrendo" loading="lazy">
+            <div class="menu-content">
+              <h3>Triple Cheddar</h3>
+              <p class="destaque-card-descricao">
+                <span>6.500 kz</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu10.png" alt="X-Tudo Gourmet com ovo, bacon, presunto, carne e batata frita no prato" loading="lazy">
+            <div class="menu-content">
+              <h3>X-Tudo Gourmet</h3>
+              <p class="destaque-card-descricao">
+                <span>7.000 kz</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu11.png" alt="Cheeseburger clássico no pão com gergelim acompanhado de batata frita" loading="lazy">
+            <div class="menu-content">
+              <h3>Cheddar Clássico</h3>
+              <p class="destaque-card-descricao">
+                <span>4.500 kz</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu12.png" alt="Combo com 3 hambúrgueres artesanais diferentes em mesa de madeira" loading="lazy">
+            <div class="menu-content">
+              <h3>Combo 3 Artesanais</h3>
+              <p class="destaque-card-descricao">
+                <span>15.000 kz</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu13.png" alt="Mega Burger recheado com carne, frango, bacon, salsicha, ovo e queijo" loading="lazy">
+            <div class="menu-content">
+              <h3>Mega Burger</h3>
+              <p class="destaque-card-descricao">
+                <span>8.500 kz</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu14.png" alt="Burger artesanal com cebola roxa, alface e molho especial no pão brioche" loading="lazy">
+            <div class="menu-content">
+              <h3>Artesanal Especial</h3>
+              <p class="destaque-card-descricao">
+                <span>5.500 kz</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--bebidas-->
+      <section id="menu-bebidas">
+        <h2 class="destaque-titulo">
+          Bebidas
+        </h2>
+        <div class="menu-cards">
+          
+          <div class="menu-card">
+            <img src="menu15.jpg" alt="Cerveja Cuca lata 330ml gelada" loading="lazy">
+            <div class="menu-content">
+              <h3>Cuca Lata</h3>
+              <p class="destaque-card-descricao">
+                <span>500 KZ</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu16.jpg" alt="Água Pura 500ml + 100ml oferta" loading="lazy">
+            <div class="menu-content">
+              <h3>Água Pura 600ml</h3>
+              <p class="destaque-card-descricao">
+                <span>300 KZ</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu17.jpg" alt="Refrigerante Yala Coco-Pina 500ml gelado" loading="lazy">
+            <div class="menu-content">
+              <h3>Yala Coco-Pina</h3>
+              <p class="destaque-card-descricao">
+                <span>600 KZ</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu18.jpg" alt="Refrigerante Yala Laranja 500ml gelado" loading="lazy">
+            <div class="menu-content">
+              <h3>Yala Laranja</h3>
+              <p class="destaque-card-descricao">
+                <span>600 KZ</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu19.jpg" alt="Refrigerante Yala Cola 500ml gelado" loading="lazy">
+            <div class="menu-content">
+              <h3>Yala Cola</h3>
+              <p class="destaque-card-descricao">
+                <span>600 KZ</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="menu-card">
+            <img src="menu20.jpg" alt="Coca-Cola lata 330ml gelada" loading="lazy">
+            <div class="menu-content">
+              <h3>Coca-Cola Lata</h3>
+              <p class="destaque-card-descricao">
+                <span>700 KZ</span>
+              </p>
+            </div>
+          </div>
+          
+          <div class="menu-card">
+            <img src="menu21.jpg" alt="Coca-Cola lata 330ml gelada" loading="lazy">
+            <div class="menu-content">
+              <h3>Coca-Cola </h3>
+              <p class="destaque-card-descricao">
+                <span>650 KZ</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <div class="social-icons">
+        <a href="https://wa.me/244933540750" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://instagram.com/só_sabores" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://facebook.com/só_sabores" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      
+      <p>
+        Copyright 2026
+        <i class="fa-regular fa-copyright"></i>
+        Só Sabores. Todos os direitos reservados
+      </p>
+    </footer>
+    <script src="link.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

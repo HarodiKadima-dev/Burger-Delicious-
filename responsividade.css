@@ -1,0 +1,74 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*para deixar responsivo no desktop*/
+@media(min-width:768px){
+    #destaque{
+        .destaque-cards{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:24px;
+        }
+    }
+    #menu{
+        min-height: 100vh;
+        gap:8rem;
+        
+        .menu-cards{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-items: center;
+            gap:34px;
+            
+            .menu-card{
+                img{
+                    width:250px;
+                }
+            }
+        }
+    }
+    
+    #menu-bebidas{
+        min-height: 100vh;
+        gap:8rem;
+        
+        .menu-cards{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-items: center;
+            gap:34px;
+            
+            .menu-card{
+                img{
+                    width:250px;
+                }
+            }
+        }
+    }
+}
+
+/*para deixar o texto do card responsivo*/
+@media(min-width: 1200px){
+    #sobre{
+        margin:4%;
+        justify-content: center;
+        
+        .sobre-content{
+            flex-direction: row;
+            align-items: center;
+            gap:40px;
+        }
+        .about-img{
+            order:1;
+        }
+        .sobre-info:first-child{
+            order:2;
+        }
+        .sobre-info:last-child{
+            order:3;
+        }
+    }
+}
+
